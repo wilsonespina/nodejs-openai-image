@@ -33,6 +33,9 @@ async function generateImageRequest(prompt, size) {
 
     if (!response.ok) {
       removeSpinner();
+      const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+      console.log("🚀 ~ file: main.js:37 ~ generateImageRequest ~ process.env:", process.env)
+      console.log("🚀 ~ file: main.js:37 ~ generateImageRequest ~ OPENAI_API_KEY:", OPENAI_API_KEY)
       throw new Error('That image could not be generated');
     }
 
