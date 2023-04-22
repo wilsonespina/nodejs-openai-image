@@ -4,6 +4,8 @@ This is a simple image generator built with Node.js and Express that uses [OpenA
 
 <img src="public/img/screen.png" width="500">
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/99790e84-1993-4562-ab82-28ec473d2180/deploy-status)](https://app.netlify.com/sites/wilson-nodejs-openai-image/deploys)
+
 ## Usage
 
 Rename the `example.env` file to `.env`.

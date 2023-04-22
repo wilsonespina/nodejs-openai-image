@@ -29,6 +29,7 @@ async function generateImageRequest(prompt, size) {
         size,
       }),
     });
+    console.log("🚀 ~ file: main.js:32 ~ generateImageRequest ~ response:", response)
 
     if (!response.ok) {
       removeSpinner();
@@ -36,7 +37,7 @@ async function generateImageRequest(prompt, size) {
     }
 
     const data = await response.json();
-    // console.log(data);
+    console.log(data);
 
     const imageUrl = data.data;
 
